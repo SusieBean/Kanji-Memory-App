@@ -1,0 +1,37 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+[application]
+
+config/name="Kanji Memory"
+run/main_scene="res://scenes/HomeScreen.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+Kanji="*res://scripts/kanji.gd"
+FlashCardIndex="*res://scripts/FlashCardIndex.gd"
+Boxes="*res://scripts/Boxes.gd"
+
+[display]
+
+window/size/resizable=false
+
+[global]
+
+start=false
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

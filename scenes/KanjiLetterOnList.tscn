@@ -1,0 +1,74 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://scripts/KanjiButtonScript.gd" type="Script" id=1]
+[ext_resource path="res://hpsimplifiedhans-light.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="StyleBoxFlat" id=1]
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.835294, 0.831373, 0.890196, 1 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.647059, 0.588235, 0.74902, 1 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.203922, 0.207843, 0.235294, 1 )
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 30
+font_data = ExtResource( 2 )
+
+[node name="KanjiListButton" type="Panel"]
+margin_right = 49.0
+margin_bottom = 55.0
+rect_min_size = Vector2( 20, 20 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+dailyLearn = Color( 0.859375, 0.248413, 0.248413, 1 )
+otherDailyLearn = Color( 0.878431, 0.631373, 0.282353, 1 )
+weeklyLearn = Color( 0.870588, 0.886275, 0.309804, 1 )
+biweeklyLearn = Color( 0.341176, 0.74902, 0.337255, 1 )
+monthlyLearn = Color( 0.294118, 0.588235, 0.85098, 1 )
+quarterYearlyLearn = Color( 0.317647, 0.160784, 0.619608, 1 )
+halfYearlyLearn = Color( 0.533333, 0.254902, 0.941176, 1 )
+yearlyLearn = Color( 0.843137, 0.188235, 0.933333, 1 )
+
+[node name="Button" type="Button" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.88
+custom_styles/hover = SubResource( 2 )
+custom_styles/pressed = SubResource( 3 )
+custom_styles/disabled = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+
+[node name="Character" type="Label" parent="Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 7
+custom_fonts/font = SubResource( 6 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "学"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="button_down" from="Button" to="." method="_on_Button_button_down"]

@@ -1,0 +1,477 @@
+[gd_scene load_steps=38 format=2]
+
+[ext_resource path="res://scripts/GeneralDisplay.gd" type="Script" id=1]
+[ext_resource path="res://hpsimplifiedhans-light.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://images/LeftArrow.png" type="Texture" id=3]
+[ext_resource path="res://images/RightArrow.png" type="Texture" id=4]
+[ext_resource path="res://images/RightArrowPress.png" type="Texture" id=5]
+[ext_resource path="res://images/RightArrowHover.png" type="Texture" id=6]
+[ext_resource path="res://images/LeftArrowHover.png" type="Texture" id=7]
+[ext_resource path="res://images/LeftArrowPress.png" type="Texture" id=8]
+[ext_resource path="res://scenes/ReturnButton.tscn" type="PackedScene" id=9]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.196078, 0.254902, 0.45098, 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.647059, 0.709804, 0.960784, 1 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.368627, 0.494118, 0.733333, 1 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 30
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.192157, 0.196078, 0.258824, 1 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.231373, 0.407843, 0.615686, 1 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 140
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.313726, 0.333333, 0.552941, 1 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 22
+font_data = ExtResource( 2 )
+
+[sub_resource type="Gradient" id=10]
+offsets = PoolRealArray( 0 )
+colors = PoolColorArray( 0.0229983, 0.0210571, 0.269531, 1 )
+
+[sub_resource type="GradientTexture" id=11]
+gradient = SubResource( 10 )
+width = 512
+
+[sub_resource type="Gradient" id=12]
+offsets = PoolRealArray( 0 )
+colors = PoolColorArray( 0.517647, 0.611765, 0.72549, 1 )
+
+[sub_resource type="GradientTexture" id=13]
+gradient = SubResource( 12 )
+
+[sub_resource type="Gradient" id=14]
+offsets = PoolRealArray( 0 )
+colors = PoolColorArray( 0.188235, 0.145098, 0.419608, 1 )
+
+[sub_resource type="GradientTexture" id=15]
+gradient = SubResource( 14 )
+
+[sub_resource type="DynamicFont" id=16]
+size = 15
+font_data = ExtResource( 2 )
+
+[sub_resource type="Gradient" id=17]
+offsets = PoolRealArray( 0 )
+colors = PoolColorArray( 0.517647, 0.611765, 0.72549, 1 )
+
+[sub_resource type="GradientTexture" id=18]
+gradient = SubResource( 17 )
+
+[sub_resource type="Gradient" id=19]
+offsets = PoolRealArray( 0 )
+colors = PoolColorArray( 0.188235, 0.145098, 0.419608, 1 )
+
+[sub_resource type="GradientTexture" id=20]
+gradient = SubResource( 19 )
+
+[sub_resource type="StyleBoxFlat" id=21]
+bg_color = Color( 0.188235, 0.168627, 0.282353, 1 )
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color( 0.188235, 0.168627, 0.282353, 1 )
+
+[sub_resource type="DynamicFont" id=22]
+size = 20
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=23]
+bg_color = Color( 0.301961, 0.388235, 0.509804, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 0.227451, 0.266667, 0.384314, 1 )
+
+[sub_resource type="DynamicFont" id=24]
+size = 14
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=25]
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=26]
+bg_color = Color( 0.298039, 0.509804, 0.596078, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 0.45098, 0.588235, 0.639216, 1 )
+
+[sub_resource type="DynamicFont" id=27]
+size = 48
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=28]
+size = 30
+font_data = ExtResource( 2 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Panel" type="Panel" parent="."]
+margin_left = -0.943848
+margin_right = 1023.06
+margin_bottom = 600.0
+size_flags_horizontal = 13
+size_flags_vertical = 13
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GUI" type="MarginContainer" parent="."]
+margin_left = 17.3362
+margin_top = 36.9725
+margin_right = 657.336
+margin_bottom = 530.972
+grow_horizontal = 2
+grow_vertical = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MainContainer" type="HBoxContainer" parent="GUI"]
+margin_right = 640.0
+margin_bottom = 493.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="MainPanel" type="Panel" parent="GUI/MainContainer"]
+margin_right = 640.0
+margin_bottom = 493.0
+rect_min_size = Vector2( 640, 0 )
+size_flags_horizontal = 13
+size_flags_vertical = 15
+custom_styles/panel = SubResource( 2 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GUI/MainContainer/MainPanel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1.0
+margin_bottom = 2.0
+size_flags_horizontal = 5
+size_flags_vertical = 3
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="GUI/MainContainer/MainPanel/VBoxContainer"]
+margin_right = 639.0
+margin_bottom = 100.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NamePanel" type="Panel" parent="GUI/MainContainer/MainPanel/VBoxContainer/HBoxContainer"]
+margin_right = 639.0
+margin_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_min_size = Vector2( 0, 100 )
+size_flags_horizontal = 3
+custom_styles/panel = SubResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="GUI/MainContainer/MainPanel/VBoxContainer/HBoxContainer/NamePanel"]
+anchor_right = 1.0
+anchor_bottom = 1.03
+margin_left = 5.0
+margin_top = 3.0
+margin_bottom = -7.62939e-06
+grow_horizontal = 2
+grow_vertical = 2
+rect_min_size = Vector2( 300, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 4 )
+text = "NAME "
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="GUI/MainContainer/MainPanel/VBoxContainer"]
+margin_top = 104.0
+margin_right = 639.0
+margin_bottom = 275.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CharacterDisplay" type="HBoxContainer" parent="GUI/MainContainer/MainPanel/VBoxContainer/Panel"]
+anchor_right = 1.0
+anchor_bottom = 0.99
+margin_top = 4.0
+margin_bottom = -0.0200195
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 9
+size_flags_vertical = 13
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LeftClick" type="TextureButton" parent="GUI/MainContainer/MainPanel/VBoxContainer/Panel/CharacterDisplay"]
+margin_right = 100.0
+margin_bottom = 165.0
+rect_min_size = Vector2( 100, 160 )
+size_flags_vertical = 3
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 8 )
+texture_hover = ExtResource( 7 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BigName" type="MarginContainer" parent="GUI/MainContainer/MainPanel/VBoxContainer/Panel/CharacterDisplay"]
+margin_left = 104.0
+margin_right = 535.0
+margin_bottom = 165.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel" type="Panel" parent="GUI/MainContainer/MainPanel/VBoxContainer/Panel/CharacterDisplay/BigName"]
+margin_right = 431.0
+margin_bottom = 165.0
+size_flags_horizontal = 15
+size_flags_vertical = 15
+custom_styles/panel = SubResource( 6 )
+
+[node name="Label" type="Label" parent="GUI/MainContainer/MainPanel/VBoxContainer/Panel/CharacterDisplay/BigName"]
+margin_top = 2.0
+margin_right = 431.0
+margin_bottom = 162.0
+rect_min_size = Vector2( 400, 100 )
+size_flags_horizontal = 5
+custom_fonts/font = SubResource( 7 )
+text = "丸"
+align = 1
+valign = 1
+
+[node name="RightClick" type="TextureButton" parent="GUI/MainContainer/MainPanel/VBoxContainer/Panel/CharacterDisplay"]
+margin_left = 539.0
+margin_right = 639.0
+margin_bottom = 165.0
+rect_min_size = Vector2( 100, 160 )
+size_flags_horizontal = 5
+size_flags_vertical = 3
+action_mode = 0
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 6 )
+expand = true
+
+[node name="DescriptionPanel" type="Panel" parent="GUI/MainContainer/MainPanel/VBoxContainer"]
+margin_top = 279.0
+margin_right = 639.0
+margin_bottom = 451.0
+size_flags_vertical = 15
+custom_styles/panel = SubResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Description" type="Label" parent="GUI/MainContainer/MainPanel/VBoxContainer/DescriptionPanel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 88.0
+margin_bottom = -82.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 5
+size_flags_vertical = 6
+custom_fonts/font = SubResource( 9 )
+text = "Description"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="GUI/MainContainer/MainPanel/VBoxContainer"]
+margin_top = 455.0
+margin_right = 639.0
+margin_bottom = 495.0
+rect_min_size = Vector2( 0, 40 )
+size_flags_horizontal = 15
+size_flags_vertical = 5
+
+[node name="KanjiButton" type="TextureButton" parent="GUI/MainContainer/MainPanel/VBoxContainer/HBoxContainer2"]
+margin_right = 317.0
+margin_bottom = 40.0
+size_flags_horizontal = 3
+texture_normal = SubResource( 11 )
+texture_pressed = SubResource( 13 )
+texture_hover = SubResource( 15 )
+expand = true
+
+[node name="KanjiButtonText" type="Label" parent="GUI/MainContainer/MainPanel/VBoxContainer/HBoxContainer2/KanjiButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 3.75256
+margin_top = -1.35968
+margin_right = -4.24744
+margin_bottom = -2.35968
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 16 )
+text = "Show Kanji"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DefinitionButton" type="TextureButton" parent="GUI/MainContainer/MainPanel/VBoxContainer/HBoxContainer2"]
+margin_left = 321.0
+margin_right = 639.0
+margin_bottom = 40.0
+size_flags_horizontal = 3
+texture_normal = SubResource( 11 )
+texture_pressed = SubResource( 18 )
+texture_hover = SubResource( 20 )
+expand = true
+
+[node name="DefinitionButtonText" type="Label" parent="GUI/MainContainer/MainPanel/VBoxContainer/HBoxContainer2/DefinitionButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 3.75256
+margin_top = -1.35968
+margin_right = -4.24744
+margin_bottom = -2.35968
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 16 )
+text = "Show Definition"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tween" type="Tween" parent="GUI"]
+
+[node name="ReturnButton" parent="." instance=ExtResource( 9 )]
+
+[node name="Pronunciations" type="Label" parent="."]
+margin_left = 676.0
+margin_top = 163.0
+margin_right = 996.0
+margin_bottom = 549.0
+custom_styles/normal = SubResource( 21 )
+custom_fonts/font = SubResource( 22 )
+text = "TEXT TEXT TEXT TEXT TEXT TEXT"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Examples" type="Label" parent="."]
+visible = false
+margin_left = 675.772
+margin_top = 370.592
+margin_right = 995.772
+margin_bottom = 570.592
+custom_styles/normal = SubResource( 23 )
+custom_fonts/font = SubResource( 24 )
+text = "TEXT TEXT TEXT TEXT TEXT TEXT"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AlternateReadings" type="Label" parent="."]
+margin_left = 675.772
+margin_top = 15.404
+margin_right = 800.772
+margin_bottom = 34.404
+custom_fonts/font = SubResource( 25 )
+text = "Alternate
+Readings"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AlternateReadingsLetter" type="Label" parent="."]
+margin_left = 675.772
+margin_top = 70.274
+margin_right = 735.772
+margin_bottom = 135.274
+rect_min_size = Vector2( 60, 60 )
+size_flags_horizontal = 9
+custom_styles/normal = SubResource( 26 )
+custom_fonts/font = SubResource( 27 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LookAlikeCharacters" type="Label" parent="."]
+margin_left = 781.189
+margin_top = 15.404
+margin_right = 906.189
+margin_bottom = 56.404
+custom_fonts/font = SubResource( 25 )
+text = "Lookalike Characters
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LookAlikeCharactersList" type="Label" parent="."]
+margin_left = 766.356
+margin_top = 45.3766
+margin_right = 966.356
+margin_bottom = 145.377
+rect_min_size = Vector2( 200, 100 )
+custom_styles/normal = SubResource( 26 )
+custom_fonts/font = SubResource( 28 )
+text = "A"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="button_down" from="GUI/MainContainer/MainPanel/VBoxContainer/Panel/CharacterDisplay/LeftClick" to="." method="_on_LeftClick_button_down"]
+[connection signal="button_down" from="GUI/MainContainer/MainPanel/VBoxContainer/Panel/CharacterDisplay/RightClick" to="." method="_on_RightClick_button_down"]
+[connection signal="button_down" from="GUI/MainContainer/MainPanel/VBoxContainer/HBoxContainer2/KanjiButton" to="." method="_on_KanjiButton_button_down"]
+[connection signal="button_down" from="GUI/MainContainer/MainPanel/VBoxContainer/HBoxContainer2/DefinitionButton" to="." method="_on_DefinitionButton_button_down"]
+[connection signal="button_down" from="ReturnButton" to="." method="_on_ReturnButton_button_down"]
