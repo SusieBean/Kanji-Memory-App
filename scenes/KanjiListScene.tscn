@@ -1,6 +1,5 @@
 [gd_scene load_steps=17 format=2]
 
-[ext_resource path="res://hpsimplifiedhans-light.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://scripts/KanjiListSceneContainer.gd" type="Script" id=2]
 [ext_resource path="res://images/LeftArrowHover.png" type="Texture" id=3]
 [ext_resource path="res://images/RightArrow.png" type="Texture" id=4]
@@ -11,24 +10,25 @@
 [ext_resource path="res://images/RightArrowHover.png" type="Texture" id=9]
 [ext_resource path="res://images/LeftArrow.png" type="Texture" id=10]
 [ext_resource path="res://scenes/ReturnButton.tscn" type="PackedScene" id=11]
+[ext_resource path="res://fonts/hpsimplifiedhans-light.ttf" type="DynamicFontData" id=12]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.305882, 0.333333, 0.478431, 1 )
 
 [sub_resource type="DynamicFont" id=2]
 size = 30
-font_data = ExtResource( 1 )
+font_data = ExtResource( 12 )
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=6]
 size = 24
-font_data = ExtResource( 1 )
+font_data = ExtResource( 12 )
 
 [sub_resource type="DynamicFont" id=4]
-font_data = ExtResource( 1 )
+font_data = ExtResource( 12 )
 
 [sub_resource type="DynamicFont" id=5]
 size = 25
-font_data = ExtResource( 1 )
+font_data = ExtResource( 12 )
 
 [node name="GridScene" type="Node2D"]
 script = ExtResource( 2 )
@@ -101,7 +101,7 @@ margin_left = 781.151
 margin_top = 133.708
 margin_right = 981.151
 margin_bottom = 433.708
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 6 )
 text = "character descriptions"
 autowrap = true
 __meta__ = {

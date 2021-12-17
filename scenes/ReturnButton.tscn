@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://hpsimplifiedhans-light.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://fonts/hpsimplifiedhans-light.ttf" type="DynamicFontData" id=1]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.670588, 0.690196, 0.8, 1 )

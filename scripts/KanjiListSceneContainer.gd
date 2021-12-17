@@ -75,4 +75,4 @@ func _on_RightButton_button_down():
 
 
 func _on_ReturnButton_button_down():
-	get_tree().change_scene("res://HomeScreen.tscn")
+	get_tree().change_scene("res://scenes/HomeScreen.tscn")

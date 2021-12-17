@@ -1,7 +1,6 @@
-[gd_scene load_steps=38 format=2]
+[gd_scene load_steps=35 format=2]
 
 [ext_resource path="res://scripts/GeneralDisplay.gd" type="Script" id=1]
-[ext_resource path="res://hpsimplifiedhans-light.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://images/LeftArrow.png" type="Texture" id=3]
 [ext_resource path="res://images/RightArrow.png" type="Texture" id=4]
 [ext_resource path="res://images/RightArrowPress.png" type="Texture" id=5]
@@ -9,6 +8,7 @@
 [ext_resource path="res://images/LeftArrowHover.png" type="Texture" id=7]
 [ext_resource path="res://images/LeftArrowPress.png" type="Texture" id=8]
 [ext_resource path="res://scenes/ReturnButton.tscn" type="PackedScene" id=9]
+[ext_resource path="res://fonts/hpsimplifiedhans-light.ttf" type="DynamicFontData" id=10]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.196078, 0.254902, 0.45098, 1 )
@@ -20,8 +20,8 @@ bg_color = Color( 0.647059, 0.709804, 0.960784, 1 )
 bg_color = Color( 0.368627, 0.494118, 0.733333, 1 )
 
 [sub_resource type="DynamicFont" id=4]
-size = 30
-font_data = ExtResource( 2 )
+size = 32
+font_data = ExtResource( 10 )
 
 [sub_resource type="StyleBoxFlat" id=5]
 bg_color = Color( 0.192157, 0.196078, 0.258824, 1 )
@@ -30,15 +30,15 @@ bg_color = Color( 0.192157, 0.196078, 0.258824, 1 )
 bg_color = Color( 0.231373, 0.407843, 0.615686, 1 )
 
 [sub_resource type="DynamicFont" id=7]
-size = 140
-font_data = ExtResource( 2 )
+size = 120
+font_data = ExtResource( 10 )
 
 [sub_resource type="StyleBoxFlat" id=8]
 bg_color = Color( 0.313726, 0.333333, 0.552941, 1 )
 
 [sub_resource type="DynamicFont" id=9]
 size = 22
-font_data = ExtResource( 2 )
+font_data = ExtResource( 10 )
 
 [sub_resource type="Gradient" id=10]
 offsets = PoolRealArray( 0 )
@@ -62,9 +62,8 @@ colors = PoolColorArray( 0.188235, 0.145098, 0.419608, 1 )
 [sub_resource type="GradientTexture" id=15]
 gradient = SubResource( 14 )
 
-[sub_resource type="DynamicFont" id=16]
-size = 15
-font_data = ExtResource( 2 )
+[sub_resource type="DynamicFont" id=27]
+font_data = ExtResource( 10 )
 
 [sub_resource type="Gradient" id=17]
 offsets = PoolRealArray( 0 )
@@ -88,26 +87,14 @@ border_width_right = 10
 border_width_bottom = 10
 border_color = Color( 0.188235, 0.168627, 0.282353, 1 )
 
-[sub_resource type="DynamicFont" id=22]
-size = 20
-font_data = ExtResource( 2 )
+[sub_resource type="DynamicFont" id=28]
+size = 22
+font_data = ExtResource( 10 )
 
-[sub_resource type="StyleBoxFlat" id=23]
-bg_color = Color( 0.301961, 0.388235, 0.509804, 1 )
-border_width_left = 5
-border_width_top = 5
-border_width_right = 5
-border_width_bottom = 5
-border_color = Color( 0.227451, 0.266667, 0.384314, 1 )
+[sub_resource type="DynamicFont" id=23]
+font_data = ExtResource( 10 )
 
-[sub_resource type="DynamicFont" id=24]
-size = 14
-font_data = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=25]
-font_data = ExtResource( 2 )
-
-[sub_resource type="StyleBoxFlat" id=26]
+[sub_resource type="StyleBoxFlat" id=24]
 bg_color = Color( 0.298039, 0.509804, 0.596078, 1 )
 border_width_left = 5
 border_width_top = 5
@@ -115,13 +102,9 @@ border_width_right = 5
 border_width_bottom = 5
 border_color = Color( 0.45098, 0.588235, 0.639216, 1 )
 
-[sub_resource type="DynamicFont" id=27]
+[sub_resource type="DynamicFont" id=25]
 size = 48
-font_data = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=28]
-size = 30
-font_data = ExtResource( 2 )
+font_data = ExtResource( 10 )
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 1 )
@@ -273,9 +256,9 @@ size_flags_vertical = 15
 custom_styles/panel = SubResource( 6 )
 
 [node name="Label" type="Label" parent="GUI/MainContainer/MainPanel/VBoxContainer/Panel/CharacterDisplay/BigName"]
-margin_top = 2.0
+margin_top = 14.0
 margin_right = 431.0
-margin_bottom = 162.0
+margin_bottom = 151.0
 rect_min_size = Vector2( 400, 100 )
 size_flags_horizontal = 5
 custom_fonts/font = SubResource( 7 )
@@ -352,7 +335,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 16 )
+custom_fonts/font = SubResource( 27 )
 text = "Show Kanji"
 align = 1
 valign = 1
@@ -381,7 +364,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 16 )
+custom_fonts/font = SubResource( 27 )
 text = "Show Definition"
 align = 1
 valign = 1
@@ -399,21 +382,7 @@ margin_top = 163.0
 margin_right = 996.0
 margin_bottom = 549.0
 custom_styles/normal = SubResource( 21 )
-custom_fonts/font = SubResource( 22 )
-text = "TEXT TEXT TEXT TEXT TEXT TEXT"
-autowrap = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Examples" type="Label" parent="."]
-visible = false
-margin_left = 675.772
-margin_top = 370.592
-margin_right = 995.772
-margin_bottom = 570.592
-custom_styles/normal = SubResource( 23 )
-custom_fonts/font = SubResource( 24 )
+custom_fonts/font = SubResource( 28 )
 text = "TEXT TEXT TEXT TEXT TEXT TEXT"
 autowrap = true
 __meta__ = {
@@ -425,7 +394,7 @@ margin_left = 675.772
 margin_top = 15.404
 margin_right = 800.772
 margin_bottom = 34.404
-custom_fonts/font = SubResource( 25 )
+custom_fonts/font = SubResource( 23 )
 text = "Alternate
 Readings"
 __meta__ = {
@@ -439,8 +408,8 @@ margin_right = 735.772
 margin_bottom = 135.274
 rect_min_size = Vector2( 60, 60 )
 size_flags_horizontal = 9
-custom_styles/normal = SubResource( 26 )
-custom_fonts/font = SubResource( 27 )
+custom_styles/normal = SubResource( 24 )
+custom_fonts/font = SubResource( 25 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -450,7 +419,7 @@ margin_left = 781.189
 margin_top = 15.404
 margin_right = 906.189
 margin_bottom = 56.404
-custom_fonts/font = SubResource( 25 )
+custom_fonts/font = SubResource( 23 )
 text = "Lookalike Characters
 "
 __meta__ = {
@@ -463,9 +432,8 @@ margin_top = 45.3766
 margin_right = 966.356
 margin_bottom = 145.377
 rect_min_size = Vector2( 200, 100 )
-custom_styles/normal = SubResource( 26 )
-custom_fonts/font = SubResource( 28 )
-text = "A"
+custom_styles/normal = SubResource( 24 )
+custom_fonts/font = SubResource( 25 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
