@@ -20,7 +20,7 @@ bg_color = Color( 0.647059, 0.709804, 0.960784, 1 )
 bg_color = Color( 0.368627, 0.494118, 0.733333, 1 )
 
 [sub_resource type="DynamicFont" id=4]
-size = 32
+size = 26
 font_data = ExtResource( 10 )
 
 [sub_resource type="StyleBoxFlat" id=5]
@@ -62,7 +62,7 @@ colors = PoolColorArray( 0.188235, 0.145098, 0.419608, 1 )
 [sub_resource type="GradientTexture" id=15]
 gradient = SubResource( 14 )
 
-[sub_resource type="DynamicFont" id=27]
+[sub_resource type="DynamicFont" id=16]
 font_data = ExtResource( 10 )
 
 [sub_resource type="Gradient" id=17]
@@ -87,7 +87,7 @@ border_width_right = 10
 border_width_bottom = 10
 border_color = Color( 0.188235, 0.168627, 0.282353, 1 )
 
-[sub_resource type="DynamicFont" id=28]
+[sub_resource type="DynamicFont" id=22]
 size = 22
 font_data = ExtResource( 10 )
 
@@ -335,7 +335,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 27 )
+custom_fonts/font = SubResource( 16 )
 text = "Show Kanji"
 align = 1
 valign = 1
@@ -364,7 +364,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 27 )
+custom_fonts/font = SubResource( 16 )
 text = "Show Definition"
 align = 1
 valign = 1
@@ -382,7 +382,7 @@ margin_top = 163.0
 margin_right = 996.0
 margin_bottom = 549.0
 custom_styles/normal = SubResource( 21 )
-custom_fonts/font = SubResource( 28 )
+custom_fonts/font = SubResource( 22 )
 text = "TEXT TEXT TEXT TEXT TEXT TEXT"
 autowrap = true
 __meta__ = {
